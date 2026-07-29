@@ -8,69 +8,49 @@
 <style>
   html { background: #fff; }
   body {
-    max-width: 40rem;
+    max-width: 640px;
     margin: 0 auto;
-    padding: 6rem 1.5rem 4rem;
-    box-sizing: border-box;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    padding: 96px 24px 64px;
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: 17px;
-    line-height: 1.65;
-    color: #111;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000;
   }
-  main { flex: 1; }
   h1 {
     font-size: 28px;
     font-weight: 400;
-    margin: 0 0 1rem;
+    margin: 0 0 64px;
   }
-  h2 {
-    font-family: ui-monospace, Menlo, Consolas, 'Courier New', monospace;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #888;
-    margin: 3.5rem 0 1rem;
-  }
-  p { margin: 0 0 1.1rem; }
-  a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+  p { margin: 0 0 18px; }
   footer {
-    margin-top: 6rem;
+    margin-top: 96px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px 24px;
     font-family: ui-monospace, Menlo, Consolas, 'Courier New', monospace;
     font-size: 11px;
     letter-spacing: 0.03em;
     color: #999;
   }
+  footer a { color: #999; text-decoration: none; }
+  footer a:hover { color: #000; }
 </style>
 </head>
 <body>
 
-<main>
-
 <h1>Self-Supervised</h1>
-
-<h2>Thesis</h2>
 
 <p>Frontier models have improved their math and coding capabilities at a startling rate. This is due to the success of reinforcement learning with verifiable feedback: where correctness can be easily verified, environments can be hillclimbed to superhuman performance. Soft properties, like sycophancy, honesty, research taste, and writing quality, cannot be hillclimbed this way. This is the fundamental problem of soft evaluation: soft environments require judges, and training models against a judge learns the judge, not the property.</p>
 
 <p>Capability makes this problem worse. Persuading the judge is itself a capability which scales with everything else. The gap between being good and seeming good widens as models grow, and a model that has learned to exploit its judges is difficult to distinguish from one that is robustly aligned. This presents an existential challenge for alignment as it is currently practiced.</p>
 
-<p>Self-Supervised is a research company that builds <em>alignment environments</em>: training environments that sidestep the problem of soft evaluation by using model internals in the evaluation process itself. Our current focus is on sycophancy and honesty, but our long-term vision is to scale self-supervised learning past judges by grounding reward in models&rsquo; native representations.</p>
+<p>Self-Supervised is a research company that builds <em>alignment environments</em>: training environments that sidestep the problem of soft evaluation by using model internals in the evaluation process itself. Our research is on which internal signals survive being optimized against. Our current focus is on sycophancy and honesty, but our long-term vision is to scale self-supervised learning past judges by grounding reward in models&rsquo; native representations.</p>
 
-<h2>Research</h2>
-
-<p>Our research is on which internal signals survive being optimized against.</p>
-
-<h2>Contact</h2>
-
-<p><a href="mailto:hello@self-supervised.com">hello@self-supervised.com</a></p>
-
-</main>
-
-<footer>&copy; 2026 Self-Supervised</footer>
+<footer>
+  <a href="mailto:hello@self-supervised.com">hello@self-supervised.com</a>
+  <span>&copy; 2026 Self-Supervised</span>
+</footer>
 
 </body>
 </html>
