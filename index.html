@@ -8,22 +8,28 @@
 <style>
   html { background: #fff; }
   body {
-    max-width: 640px;
+    max-width: 600px;
     margin: 0 auto;
-    padding: 96px 24px 64px;
+    padding: 56px 24px 40px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 15px;
+    line-height: 1.55;
     color: #000;
   }
   h1 {
-    font-size: 28px;
-    font-weight: 400;
-    margin: 0 0 64px;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 40px;
   }
-  p { margin: 0 0 18px; }
+  p { margin: 0 0 16px; }
   footer {
-    margin-top: 96px;
+    margin-top: auto;
+    padding-top: 48px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -35,6 +41,9 @@
   }
   footer a { color: #999; text-decoration: none; }
   footer a:hover { color: #000; }
+  @media (max-width: 480px) {
+    body { padding: 40px 20px 28px; }
+  }
 </style>
 </head>
 <body>
