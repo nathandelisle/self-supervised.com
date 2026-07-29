@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Self-Supervised, Inc.</title>
+<meta name="description" content="Self-Supervised builds evals and RL environments for model character — sycophancy, honesty, epistemics — graded on model internals, not human approval.">
+<style>
+  html { background: #fff; }
+  body {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 88px 24px 72px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 1.55;
+    color: #000;
+  }
+  h1 {
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 0 56px;
+    letter-spacing: -0.01em;
+  }
+  h2 {
+    font-family: ui-monospace, Menlo, Consolas, 'Courier New', monospace;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #555;
+    margin: 56px 0 18px;
+  }
+  p { margin: 0 0 16px; }
+  ul { margin: 0 0 16px; padding-left: 20px; }
+  li { margin-bottom: 10px; }
+  a { color: #000; text-underline-offset: 2px; }
+  a:hover { text-decoration-thickness: 2px; }
+  .foot {
+    margin-top: 72px;
+    font-family: ui-monospace, Menlo, Consolas, 'Courier New', monospace;
+    font-size: 11px;
+    color: #888;
+  }
+</style>
+</head>
+<body>
+
+<h1>Self-Supervised, Inc.</h1>
+
+<p>Frontier models are aligned by human preference labels: a rater reads two responses and picks the one they like better, and the model is trained to produce more of whatever gets picked.</p>
+
+<p>Human approval is a bad proxy for good behavior. Optimizing against it is where sycophancy comes from — models learn to be agreeable, flattering, and deferential because that is what the signal rewards. The failure is not in the model; it is in the supervision.</p>
+
+<p>We build the supervision. Evals and training environments for model character — sycophancy, honesty, epistemics — in which the grader reads the model&rsquo;s internals as well as its transcripts. A model that says the right thing while representing something else should fail.</p>
+
+<p>Our research question is which internal signals can be trusted: which features survive being trained against, and which collapse under optimization pressure. Current focus is sycophancy and epistemic honesty. The long-term goal is character engineered as precisely as capability.</p>
+
+<h2>What we build</h2>
+<ul>
+  <li>Character evals — batteries for sycophancy, honesty, and epistemic calibration, graded on internals as well as outputs.</li>
+  <li>Alignment RL environments — training environments whose reward is grounded in what the model represents, not what a rater approves.</li>
+  <li>Internals-grade audits — pre-deployment behavioral audits with white-box evidence.</li>
+</ul>
+
+<h2>Research</h2>
+<p>Which sparse-feature signals survive being trained against, and which Goodhart (NeurIPS 2026, under review).</p>
+<p>Self-Supervised is <a href="https://nathandelisle.com">Nathan Delisle</a> — MATS, CHAI (UChicago), NeurIPS.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:hello@self-supervised.com">hello@self-supervised.com</a></p>
+
+<p class="foot">&copy; 2026 Self-Supervised, Inc.</p>
+
+</body>
+</html>
